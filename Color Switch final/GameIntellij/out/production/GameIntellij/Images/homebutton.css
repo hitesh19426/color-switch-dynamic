@@ -1,0 +1,5 @@
+.background {
+    -fx-background-image: url('home.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+}

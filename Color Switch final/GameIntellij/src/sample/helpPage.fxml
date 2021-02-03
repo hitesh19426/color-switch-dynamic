@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="AnchorPaneMotionPage" prefHeight="640.0" prefWidth="420.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.helpPage">
+   <children>
+      <Button layoutX="76.0" layoutY="569.0" mnemonicParsing="false" onMouseClicked="#BackToMainMenu" text="Back to Main Menu" />
+      <Text fill="#57f26c" layoutX="45.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Click on the play Button to play the game. Use the Up arrow key or spacebar or &quot;W&quot; key to make the ball jump. Pass the obstacles that have the same ball color. If you try to pass through an obstacle that has color different from the ball , the game will end . Collect stars to increase your game score. To pause the game , click the Pause button." textAlignment="CENTER" wrappingWidth="330.89060974121094">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#f21111" layoutX="45.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COLOR SWITCH" textAlignment="CENTER" wrappingWidth="330.89060974121094">
+         <font>
+            <Font name="Arial Bold" size="46.0" />
+         </font>
+      </Text>
+      <Text fill="#1d68ff" layoutX="45.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HAPPY PLAYING" textAlignment="CENTER" wrappingWidth="330.89060974121094">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="youtubeButton" layoutX="210.0" layoutY="569.0" mnemonicParsing="false" onMouseClicked="#youtubeTutorial" text="Youtube Video Tutorial" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane fx:id="AnchorPaneMotionPage" prefHeight="640.0" prefWidth="420.0" style="-fx-background-color: black;"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.TranslationalTry">
+   <Button  layoutX="320.0" layoutY="400.0" mnemonicParsing="false"
+           onMouseClicked="#TranslateBars" text="Translate" AnchorPane.bottomAnchor="0.0"/>
+   <Group fx:id="HorBars" layoutY="10.0">
+      <Rectangle  arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="100.0" stroke="BLACK"
+                 strokeType="INSIDE" width="10.0"/>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f32" height="100.0" layoutX="30.0"
+                 stroke="BLACK" strokeType="INSIDE" width="10.0"/>
+      <Rectangle  arcHeight="5.0" arcWidth="5.0" fill="#ff9621" height="100.0" layoutX="90.0"
+                 stroke="BLACK" strokeType="INSIDE" width="10.0"/>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fff4b" height="100.0" layoutX="60.0"
+                 stroke="BLACK" strokeType="INSIDE" width="10.0"/>
+   </Group>
+   <Group fx:id="CrossObstacle" layoutY="190.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="50.0" layoutX="70.0" layoutY="10.0"
+                 stroke="BLACK" strokeType="INSIDE" width="10.0" x="1.0"/>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff821f" height="50.0" layoutX="70.0" layoutY="50.0"
+                 stroke="BLACK" strokeType="INSIDE" width="10.0"/>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fff71" height="50.0" layoutX="90.0" layoutY="30.0"
+                 rotate="90.0" stroke="BLACK" strokeType="INSIDE" width="10.0"/>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff401f" height="50.0" layoutX="50.0" layoutY="30.0"
+                 rotate="90.0" stroke="BLACK" strokeType="INSIDE" width="10.0"/>
+   </Group>
+   <Button  layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#StartMotion"
+           text="InitializeMotion" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="150.0"/>
+   <Group fx:id="SquareObstacle" layoutX="200.0" layoutY="145.0">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="90.0" layoutY="40.0" stroke="BLACK"
+                 strokeType="INSIDE" width="10.0"/>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fff41" height="90.0" layoutX="40.0" rotate="90.0"
+                 stroke="BLACK" strokeType="INSIDE" width="10.0"/>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8c1f" height="90.0" layoutX="40.0" layoutY="80.0"
+                 rotate="90.0" stroke="BLACK" strokeType="INSIDE" width="10.0"/>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff321f" height="90.0" layoutX="80.0" layoutY="40.0"
+                 stroke="BLACK" strokeType="INSIDE" width="10.0"/>
+   </Group>
+   <Group fx:id="arcObstacle" layoutX="239.0" layoutY="190.0">
+      <Arc  fill="#2197ff00" layoutY="48.0" length="90.0" radiusX="100.0" radiusY="100.0"
+           startAngle="90.0" stroke="#d41111" strokeType="INSIDE" strokeWidth="10.0"/>
+      <Arc fill="#561ac700" layoutX="-4.0" layoutY="48.0" length="90.0" radiusX="100.0"
+           radiusY="100.0" stroke="#13d126" strokeType="INSIDE" strokeWidth="10.0"/>
+      <Arc  fill="#561ac700" layoutX="-1.0" layoutY="52.0" length="90.0" radiusX="100.0"
+           radiusY="100.0" startAngle="180.0" stroke="#b7cf15" strokeType="INSIDE" strokeWidth="10.0"/>
+      <Arc  fill="#2197ff00" layoutX="-5.0" layoutY="52.0" length="90.0" radiusX="100.0"
+           radiusY="100.0" startAngle="270.0" stroke="#137ad4" strokeType="INSIDE" strokeWidth="10.0"/>
+   </Group>
+   <Button layoutX="208.0" layoutY="373.0" mnemonicParsing="false" onMouseClicked="#BackToMainMenu" text="MainMenu"
+           AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0"/>
+   <AnchorPane prefHeight="200.0" prefWidth="200.0"/>
+   <AnchorPane fx:id="ColorSwitch" layoutX="130.0" layoutY="400.0" prefHeight="90.0" prefWidth="85.0" styleClass="colorSwitch"
+               stylesheets="@../Images/backgnd.css"/>
+   <AnchorPane fx:id="Star" layoutX="280.0" layoutY="400.0" prefHeight="80.0" prefWidth="90.0" styleClass="star"
+               stylesheets="@../Images/backgnd.css"/>
+</AnchorPane>

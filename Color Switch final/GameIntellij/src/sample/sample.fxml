@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="GridPaneMain" alignment="CENTER" hgap="10" prefHeight="640.0" prefWidth="420.0" styleClass="background" stylesheets="@../Images/backgnd.css" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane fx:id="AnchorPaneMain" blendMode="LIGHTEN" prefHeight="640.0" prefWidth="420.0" styleClass="background" stylesheets="@../Images/backgnd.css" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+         <children>
+            <ImageView fx:id="ImageViewMain" blendMode="DIFFERENCE" fitHeight="640.0" fitWidth="420.0" layoutY="5.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+               <image>
+                  <Image url="@../Images/bg.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="PlayButton" layoutX="168.0" layoutY="255.0" mnemonicParsing="false" onMousePressed="#PlayButtonCLicked" opacity="0.0" prefHeight="82.0" prefWidth="88.0" text="Play" />
+            <Button fx:id="SettingsButton" layoutX="22.0" layoutY="37.0" mnemonicParsing="false" onMousePressed="#SettingsButtonClicked" opacity="0.0" prefHeight="53.0" prefWidth="62.0" text="Settings" />
+            <Button fx:id="HelpButton" layoutX="335.0" layoutY="33.0" mnemonicParsing="false" onMousePressed="#HelpButtonClicked" opacity="0.0" prefHeight="53.0" prefWidth="62.0" text="Help" />
+            <Button fx:id="ExitButton" layoutX="335.0" layoutY="95.0" mnemonicParsing="false" onMousePressed="#ExitButtonClicked" prefHeight="53.0" prefWidth="62.0" text="Exit" AnchorPane.rightAnchor="23.0" />
+            <Button fx:id="TranslateButton" layoutX="117.0" layoutY="439.0" mnemonicParsing="false" onMouseClicked="#TranslationTry" prefHeight="39.0" prefWidth="187.0" text="ShowObstacles" />
+            <Button layoutX="22.0" layoutY="95.0" mnemonicParsing="false" onMouseClicked="#SavedGamesButtonClicked" opacity="0.0" prefHeight="53.0" prefWidth="62.0" text="Saved Games" />
+            <Button fx:id="Help" layoutX="334.0" layoutY="33.0" mnemonicParsing="false" onMousePressed="#HelpButtonClicked" opacity="0.0" prefHeight="53.0" prefWidth="62.0" text="Help" AnchorPane.rightAnchor="23.0" />
+            <Button fx:id="Settings" layoutX="22.0" layoutY="33.0" mnemonicParsing="false" onMousePressed="#SettingsButtonClicked" opacity="0.0" prefHeight="53.0" prefWidth="62.0" text="Settings" />
+            <ImageView fitHeight="74.0" fitWidth="71.0" layoutX="326.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/fb.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="fbShare" layoutX="336.0" layoutY="536.0" mnemonicParsing="false" onMouseClicked="#fbShare" opacity="0.0" text="Share" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

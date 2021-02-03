@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="MainAnchorPane" prefHeight="640.0" prefWidth="420.0" styleClass="pauseBack"
+            stylesheets="@../Images/backgnd.css" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PauseScreen">
+   <Button layoutX="149.0" layoutY="249.0" mnemonicParsing="false"
+           onMouseClicked="#ResumeButton" opacity="0.0" prefHeight="102.0" prefWidth="117.0" text="Resume"/>
+   <Button  layoutX="21.0" layoutY="32.0" mnemonicParsing="false"
+           onMouseClicked="#HomeButton" opacity="0.0" prefHeight="49.0" prefWidth="62.0" text="Home"/>
+</AnchorPane>
+

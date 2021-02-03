@@ -1,0 +1,29 @@
+.background {
+    -fx-background-image: url('bgcolor.png');
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}
+
+.home {
+    -fx-background-image: url('home.png');
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+}
+
+.colorSwitch {
+    -fx-background-image: url('ColorSwitcher.jpeg');
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}
+
+.pauseBack {
+    -fx-background-image: url('pauseScreen.jpg');
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}
+
+.star {
+    -fx-background-image: url('Star.jpeg');
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}

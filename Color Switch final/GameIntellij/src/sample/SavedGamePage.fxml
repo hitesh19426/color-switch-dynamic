@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="AnchorPaneMain" prefHeight="640.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SavedGamePage">
+    <SplitPane dividerPositions="0.5" orientation="VERTICAL" AnchorPane.bottomAnchor="0.0"
+               AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <MenuBar>
+            <Menu mnemonicParsing="false" text="File">
+                <MenuItem fx:id="BackToMainMenu" mnemonicParsing="false" onAction="#BackToMainMenu"
+                          text="Back to Main Menu"/>
+                <MenuItem fx:id="Exit" mnemonicParsing="false" onAction="#ExitTheGame" text="Exit"/>
+            </Menu>
+        </MenuBar>
+        <TableView fx:id="Table" editable="true" prefHeight="200.0" prefWidth="200.0">
+            <columns>
+                <TableColumn fx:id="Column1" minWidth="166.0" prefWidth="166.0" text="Game"/>
+                <TableColumn fx:id="Column2" prefWidth="134.0" text="High Score"/>
+                <TableColumn fx:id="Column3" prefWidth="118.0" text="Load"/>
+            </columns>
+        </TableView>
+    </SplitPane>
+</AnchorPane>
